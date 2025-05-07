@@ -1,0 +1,49 @@
+.form {
+  margin-left: 200px;
+}
+.wow_InputContainer {
+  background-color: white;
+  border-radius: 8px;
+  padding: 10px;
+  width: 300px;
+  /* margin: 0 auto; */
+  height: 30px;
+  margin-top: 15px;
+  box-shadow: 0 4px 6px rgb(0, 0, 0, 0.1);
+}
+.wow_Input {
+  border: none;
+}
+.wow_Input:focus {
+  outline: none;
+}
+.butt{
+    border:none;
+    background-color:cornsilk;
+    border-radius: 4%;
+    box-shadow: 3px 4px 2px ;
+    cursor: pointer;
+}
+.taskItem {
+  display: flex;
+  align-items: center;
+  padding: 10px 16px;
+  margin: 8px 0;
+  background-color: #f9f9f9;
+  border-radius: 6px;
+}
+
+.taskText {
+  flex: none;
+  margin-right: 12px;
+  word-break: break-word;
+  font-size: 1.1rem;
+}
+
+.delBut {
+  background: transparent;
+  border: none;
+  font-size: 1.3rem;
+  cursor: pointer;
+  margin-left: auto; /* 👈 this keeps it right-aligned within the flex row */
+}
