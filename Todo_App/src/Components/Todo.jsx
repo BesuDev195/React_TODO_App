@@ -14,7 +14,7 @@ export default function Todo() {
   return (
     <div className={styles.form}>
       <form className={styles.wow_InputContainer} onSubmit={handleSubmit}>
-        <input
+        <input required
           className={styles.wow_Input}
           placeholder="Enter Your Task Here"
           type="text"

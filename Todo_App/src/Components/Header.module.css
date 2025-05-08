@@ -1,7 +1,8 @@
-.Header{
-    background-color:burlywood;
-    width: 100%;
-    /* margin-left: 400px; */
-    box-shadow: 2px 5px 6px;
-    text-align: center;
+.Header {
+  background-color: burlywood;
+  width: 100%;
+  /* margin-left: 400px; */
+  box-shadow: 2px 5px 6px;
+  text-align: center;
+  margin-top: 0;
 }
