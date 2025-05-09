@@ -3,20 +3,20 @@ import Tasks from "./Tasks";
 import styles from "./Todo.module.css";
 
 export default function Todo() {
-  const [todo, setTodo] = useState("");
+  const [todo, setTodo] = useState({name:"",done:false});
   const [tasks, setTasks] = useState([]);
 
   function handleSubmit(e) {
     e.preventDefault();
-    if (!todo.trim()) return;
+   if (!todo.name.trim()) return;
 
     const newTask = {
-      id: Date.now(), 
-      text: todo,
+      id: Date.now(),
+      text: todo.name,
     };
 
     setTasks([...tasks, newTask]);
-    setTodo("");
+     setTodo({ name: "", done: false });
   }
 
   function deleteTask(id) {
@@ -31,8 +31,8 @@ export default function Todo() {
           className={styles.wow_Input}
           placeholder="Enter Your Task Here"
           type="text"
-          onChange={(e) => setTodo(e.target.value)}
-          value={todo}
+          onChange={(e) => setTodo({name:e.target.value,done:false})}
+          value={todo.name}
         />
         <button className={styles.butt}>Add Task</button>
       </form>
